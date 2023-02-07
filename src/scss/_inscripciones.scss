@@ -1,0 +1,196 @@
+.bodySinAside {
+    display: grid;
+    background-color: #84428C;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 450px auto 100px;
+    grid-template-areas: "header header header  header"
+                         "main    main   main   main"
+                         "footer  footer footer footer";
+
+                         .navegador {
+                          grid-area: header; 
+                        }
+                        
+                        .mainIndex {
+                          grid-area: main; 
+                        }
+                        
+                        .footer {
+                          grid-area: footer; 
+                        }
+                        
+                        h1 {
+                          color: #12A6A6;
+                          text-align: center;
+                          font-weight: normal;
+                          font-size: 80px;
+                          margin: 25px;
+                          font-family: 'Nunito', sans-serif;
+                        }
+
+                      .inscripciones{
+                        
+                        background-color:#84428C;
+                          color: #F2B705;
+                          text-align: center;
+                          font-weight: normal;
+                          font-size: 25px;
+                          margin: 20px; 
+                          font-family: 'Nunito', sans-serif;
+                        
+                      }
+
+
+                        }
+                        
+                      
+                      
+                        
+                        
+                        
+                        
+                      
+  
+  @media (max-width: 768px) {
+    .bodySinAside {
+      grid-template-rows: 450px auto 100px;
+      grid-template-areas: "header header header header"
+                            "main   main   main   main"
+                            "footer footer footer footer"; 
+                            }
+                           }
+  
+  
+  
+ 
+  .formulario {
+    padding: 30px;
+    background-color: #12A6A6;
+    max-width: 900px;
+    height: 900px;
+    margin: 10px auto;
+    display: grid;
+    gap: 10px;
+    font-family: 'Nunito', sans-serif;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 80px;
+    grid-template-areas: "nombre      apellido"
+                        "dni         telefono"
+                        "genero      genero"
+                        "mensaje     mensaje"
+                        "condiciones condiciones"
+                        "btn         btn"; 
+                    }
+  
+  @media (max-width: 768px) {
+    .formulario {
+      font-family: 'Nunito', sans-serif;
+      padding: 30px;
+      background-color: #12A6A6;
+      max-width: 680px;
+      height: 1100px;
+      margin: 10px auto;
+      display: grid;
+      gap: 10px;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 100px;
+      grid-template-areas: "nombre"      
+                            "apellido"
+                            "dni"         
+                            "telefono"
+                            "genero"      
+                             "mensaje"
+                            "condiciones"
+                             "btn";
+                            } 
+                            }
+  
+  .formulario label:nth-child(1) {
+    grid-area: nombre; }
+  
+  .formulario label:nth-child(2) {
+    grid-area: apellido; }
+  
+  .formulario label:nth-child(3) {
+    grid-area: dni; }
+  
+  .formulario fieldset:nth-child(4) {
+    grid-area: genero; }
+  
+  .formulario label:nth-child(5) {
+    grid-area: telefono; }
+  
+  .formulario label:nth-child(6) {
+    grid-area: mensaje; }
+  
+  .formulario label:nth-child(7) {
+    grid-area: condiciones; }
+  
+  .formulario button:nth-child(8) {
+    grid-area: btn; }
+  
+  
+  
+  .formulario label {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    color: #F2B705; 
+    font-family: 'Nunito', sans-serif;
+        > label > input {
+            background-color: white;
+            border-bottom: 1px solid white; 
+        }
+    
+}
+  
+  
+  .genero {
+    width: 280px;
+    padding: 10px;
+    margin: 10px;
+    color:#F2B705;
+    font-family: 'Nunito', sans-serif;
+}
+  
+  .redondeado {
+    width: 100px;
+    height: 50px;
+    border: 2px solid;
+    border-radius: 5px;
+    border-color: #F2B705;
+    background-color: #F2B705;
+    margin: 2px;
+    font-size: 20px;
+    text-decoration: none;
+    color: #84428C; }
+  
+  .completar {
+    width: 200px;
+    background-color: #ffffff; 
+    font-family: 'Nunito', sans-serif;
+  }
+  
+  .completar2 {
+    width: 200px;
+    background-color: #ffffff;
+    font-family: 'Nunito', sans-serif; }
+  
+  .completar3 {
+    width: 200px;
+    background-color: #ffffff;
+    font-family: 'Nunito', sans-serif; }
+  
+  .completar4 {
+    width: 200px;
+    background-color: #ffffff;
+    font-family: 'Nunito', sans-serif; }
+  
+  .textarea {
+    width: 750px;
+    height: 200px;
+    background-color: #F2B705;
+    font-family: 'Nunito', sans-serif;
+    color: #ffffff; 
+  }

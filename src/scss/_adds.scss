@@ -1,0 +1,46 @@
+.asideIndex {
+    grid-area: aside; }
+  
+  @media (max-width: 768px) {
+    .add {
+      width: 100px;
+      height: 150px;
+      padding: 15px;
+      margin: 10px; 
+    } 
+}
+  
+  .adds {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right; 
+    
+    .add {
+        width: 250px;
+        height: 250px;
+        padding: 15px;
+        margin: 10px; 
+
+        h4 {
+            position: initial;
+            width: 100%;
+            font-size: 20px;
+            text-align: center;
+            color: $coloramarillo;
+            font-family: 'Nunito', sans-serif;
+        }
+
+
+    }
+
+
+}
+  
+ 
+  .add img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill; 
+}
+  
+  

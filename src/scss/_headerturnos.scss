@@ -1,0 +1,18 @@
+.headerturnos{
+    grid-area: header;
+    padding: 100px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-image: url(../img/Banner.jpg);
+    background-size:cover;
+    display: flex;
+    justify-content: left;
+    justify-content: start;
+    position: relative; 
+}
+  
+  @media (max-width: 768px) {
+    .headerturnos{
+      height: 200px; 
+      } 
+    }

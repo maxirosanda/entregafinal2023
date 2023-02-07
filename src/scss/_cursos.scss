@@ -1,0 +1,119 @@
+.bodyCursos {
+  background-color: $colorvioleta;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 450px auto 100px;
+  grid-template-areas: "header header header  header"
+                        "main    main   main   main"
+                        "footer  footer footer footer";
+                        .navegador {
+                          grid-area: header; }
+                        
+                        .headerIndex {
+                          grid-area: header; }
+                        
+                        .mainIndex {
+                          grid-area: main; }
+                        
+                        .footer {
+                          grid-area: footer; }
+                        
+                        .select {
+                          grid-area: main;
+                          border: solid 2px;
+                          border-color: $coloramarillo;
+                          border-radius: 5px;
+                          background-color: $coloramarillo;
+                          padding: 10px;
+                          margin: 30px;
+                          font-size: 10px;
+                          text-decoration: none;
+                          color: $colorvioleta; 
+                          font-family: 'Nunito', sans-serif;
+                          }
+                        
+                      
+                      }
+
+@media (max-width: 768px) {
+  .bodyCursos {
+    grid-template-rows: 450px auto 100px;
+    grid-template-areas: "header header header header"
+                        "main   main   main   main"
+                        "footer footer footer footer"; 
+                        }
+                       }
+
+
+
+.cajaPadreCursos {
+  grid-area: main;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 80px;
+  align-content: center;
+
+  .tarjetaCursos {
+   @extend %tarjetacursos;
+  
+  }
+  
+
+
+}
+
+@media (max-width: 768px) {
+  .cajaPadreCursos {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 80px;
+    grid-template-areas: "tarjeta"; }
+  .tarjetaCursos {
+    border: solid 2px;
+    border-color: $colorceleste;
+    border-radius: 5px;
+    background-color: $colorceleste;;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    margin: 20px;
+    width: 250px;
+    height: 400px;
+    align-content: center;
+    column-gap: 5PX; 
+    } 
+  }
+
+    .tarjetaCursos img {
+      width: 100%; }
+    
+    .tarjetacursos__titulo {
+      margin: 2px;
+      font-size: 18px;
+      color: $coloramarillo; 
+      font-family: 'Nunito', sans-serif;
+    }
+    
+    .tarjetacursos__contenido {
+      margin: 5px;
+      color: white;
+      font-size: 15px; 
+      font-family: 'Nunito', sans-serif;
+    }
+    
+    .tarjetacursos__btn {
+      display: block;
+      width: 80px;
+      text-align: center;
+      padding: 5px;
+      margin: 5px;
+      border: none;
+      border-radius: 5px;
+      background-color: $coloramarillo;
+      color: $colorvioleta;
+      text-decoration: none;
+      font-size: 12px; 
+      font-family: 'Nunito', sans-serif;
+    }
+
+

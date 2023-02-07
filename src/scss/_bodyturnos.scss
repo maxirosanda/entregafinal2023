@@ -1,0 +1,55 @@
+.bodyturnos {
+    display: grid;
+    background-color: $colorvioleta;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows:   400px  1300px 100px;
+    grid-template-areas: "header header header  header"
+                         "main    main   main   main"
+                         "footer  footer footer footer"; 
+
+                        .headerturnos{
+                            grid-area: header;
+                        }
+
+                        .turnos{
+                            grid-area: main;
+                            width: 700px;
+                            margin: 20px auto;
+                            padding: 10px;
+                            height: 1050px;
+                            background-color: $colorceleste;
+                            font-size: 15px;
+                            color: $coloramarillo;
+                            font-family: 'Nunito', sans-serif;
+                        }
+                        .navegador {
+                            grid-area: header; 
+                          }
+                             
+                    
+                        .footerTurnos {
+                            grid-area:footer;
+                            width: 100%;
+                            padding: 2px;
+                            margin: 3px; 
+                            
+                        } 
+
+
+
+                        }
+
+@media (max-width: 768px) {
+    .bodyturnos {
+    grid-template-rows: 450px auto 50px;
+    grid-template-areas: "header header header header"
+                         "main   main   main   main"
+                         "footer footer footer footer"; 
+
+}
+
+}
+                          
+                          
+                  
+                         

@@ -1,0 +1,66 @@
+@mixin button($colorfondo,$color){
+
+  display: block;
+  width: 95px;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  background-color: $colorfondo;
+  color: $color;
+  text-decoration: none; 
+  font-family: 'Nunito', sans-serif;
+
+
+}
+
+.cajaPadre {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-end; 
+
+    .tarjeta {
+        @extend %tarjeta; 
+      
+        }
+      
+      .tarjeta__img {
+        width: 100%;
+        padding: 5px; 
+        }
+      
+      .tarjeta__titulo {
+        margin: 8px;
+        font-size: 18px;
+        font-family: 'Nunito', sans-serif;
+        }
+      
+      .tarjeta__descrip {
+        margin: 5px;
+        font-size: 14px;
+        color: white; 
+        font-family: 'Nunito', sans-serif;
+        }
+      
+      .tarjeta__btn {
+        @include button(#84428C, #F2B705)
+       
+        }
+      
+      .tarjeta__titulo--colorLetra {
+        color: $coloramarillo; 
+        }
+      
+      @media (max-width: 768px) {
+        .tarjeta {
+          width: 150px;
+          height: 400px;
+          column-gap: 5px;
+          border: solid 2px;
+          border-color: $colorceleste;
+          background-color:$colorceleste;
+          margin: 30px; 
+          } 
+        }
+}
+

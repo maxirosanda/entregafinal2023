@@ -1,0 +1,14 @@
+@mixin button($colorfondo,$color){
+
+    display: block;
+    width: 95px;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    background-color: $colorfondo;
+    color: $color;
+    text-decoration: none; 
+    font-family: 'Nunito', sans-serif;
+  
+  
+  }
